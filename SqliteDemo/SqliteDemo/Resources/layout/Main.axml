@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333">
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Enter Name"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/ename"
+        android:background="#ffffff" />
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Enter Age"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/eage"
+        android:background="#ffffff" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp" />
+    <RadioGroup
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Male"
+                android:id="@+id/male" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/female" />
+        </LinearLayout>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnsubmit"
+        android:text="Submit"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+    <Button
+        android:id="@+id/btnshow"
+        android:text="Show"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="View Profile" />
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp" />
+</LinearLayout>
